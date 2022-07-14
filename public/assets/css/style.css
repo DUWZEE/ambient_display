@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+.timedate{
+    background-color: red;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+}
+.time{
+    font-size: 12em;
+    font-weight: 4em;
+    line-height: 0;
+}
+.day_name{
+    font-size: 4em;
+    font-weight: 2em;
+    line-height: 0;
+    font-family: 'Dancing Script', cursive;
+}
+.date{
+    font-size: 2em;
+    font-weight: 2em;
+    line-height: 0;
+}
+.w_left{
+    width: 150px;
+    height: 150px;
+    float: left;
+    justify-content: center;
+    display: flex;
+}
+.w_right{
+    width: 250px;
+    height: 150px;
+    float: right;
+    font-weight: 4em;
+    line-height: 0;
+    text-align: center;
+}
+.w_right h1{
+    font-size: 6em;
+}
+.w_right h2{
+    font-size: 2.5em;
+    font-family: 'Dancing Script', cursive;
+}
+.weather{
+    background-color: blue;
+    width: 400px;
+    height: 150px;
+    float: right;
+}

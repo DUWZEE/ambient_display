@@ -1,0 +1,8 @@
+.env*
+vendor/
+scratch/
+composer.lock
+.idea
+
+*_access.txt
+*_refresh.txt
