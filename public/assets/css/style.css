@@ -2,9 +2,12 @@
 body{
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    color: #ffff;
+    background-color: #000000;
 }
 .timedate{
-    background-color: red;
+    /* background-color: red; */
     text-align: center;
     position: absolute;
     top: 25%;
@@ -29,30 +32,120 @@ body{
     line-height: 0;
 }
 .w_left{
-    width: 150px;
-    height: 150px;
+    width: 50%;
+    height: 100%;
     float: left;
-    justify-content: center;
+    /* background-color: red; */
     display: flex;
+    justify-content: center;
+}
+.w_left img{
+    height: 100%;
 }
 .w_right{
-    width: 250px;
-    height: 150px;
+    width: 50%;
+    height: 100%;
     float: right;
     font-weight: 4em;
     line-height: 0;
     text-align: center;
 }
 .w_right h1{
-    font-size: 6em;
+    font-size: 5em;
+    border: solid;
+    border-radius: 0px 0px 0px 30px;
+    border-width: 0px 0px 0px 0px;
 }
 .w_right h2{
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-family: 'Dancing Script', cursive;
+
+}
+.weather_today{
+    width: 100%;
+    height: 100%;
 }
 .weather{
-    background-color: blue;
-    width: 400px;
-    height: 150px;
+    background-color: rgba(0, 0, 255, 0.2);
+    width: 35%;
+    height: 15%;
+    position: absolute;
+    top: 0%;
+    left: 65%;
     float: right;
+    border: solid rgb(0, 0, 255);
+    border-radius: 0px 0px 0px 30px;
+    border-width: 0px 0px 5px 5px;
+    animation: none 2s ease forwards;
+}
+.spotify{
+    /* background-color: rgba(30, 215, 96, 0.2); */
+    background-image: url('../../assets/img/spotify.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    width: 35%;
+    height: 15%;
+    position: absolute;
+    top: 100%;
+    left: 65%;
+    border: solid rgb(30, 215, 96) 5px;
+    /* top left, top right, bottom right, bottom left */
+    border-radius: 30px 0px 0px 0px;
+    animation: none 2s ease forwards;
+}
+.thumbnail img{
+    height: 100%;
+    border: solid black 0px;
+    border-radius: 25px 0px 0px 0px;
+}
+.thumbnail{
+    width: 25%;
+    height: 100%;
+    /* display: inline-block; */
+    float: left;
+}
+.s_data{
+    /* display: inline-block; */
+    width: 75%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    font-weight: 4em;
+    font-size: 1.3em;
+    line-height: 0;
+    vertical-align: middle;
+}
+@keyframes s_hide {
+    from {
+        top: 85%;
+    }
+    to {
+        top: 100%;
+    }
+}
+@keyframes s_show {
+    from {
+        top: 100%;
+    }
+    to {
+        top: 85%;
+    }
+}
+
+@keyframes w_hide {
+    from {
+        top: 0%;
+    }
+    to {
+        top: -25%;
+    }
+}
+@keyframes w_show {
+    from {
+        top: -25%;
+    }
+    to {
+        top: 0%;
+    }
 }
